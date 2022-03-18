@@ -24,11 +24,6 @@ zstyle ':completion:*' group-name ''
 ### select=2: 補完候補を一覧から選択する。補完候補が2つ以上なければすぐに補完する。
 zstyle ':completion:*:default' menu select=2
 
-# COLOR
-# LS_COLORS
-eval `dircolors -b`
-eval `dircolors ${HOME}/.dircolors`
-
 # remove file mark
 unsetopt list_types
 #################################  OTHERS  #################################
@@ -37,5 +32,8 @@ setopt auto_cd
 
 # disable ctrl+s, ctrl+q
 setopt no_flow_control
+
+# 日本語ファイル名を表示可能にする
+setopt print_eight_bit
 
 
