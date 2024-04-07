@@ -30,6 +30,10 @@
 ``` console
   cd crest89_dotfiles
 ```
+*実行権限の付与
+``` console
+  chmod +x deploy.sh
+```
 ``` console
   zsh deploy.sh
 ```
