@@ -23,6 +23,29 @@
 ```
 
 ## crest89_dotfilesの導入
-シェルを開きなおし下記コードを実行。
+* シェルを開きなおし下記コードを実行。
 ``` console
+  git clone https://github.com/crest89/crest89_dotfiles.git
 ```
+``` console
+  cd crest89_dotfiles
+```
+``` console
+  zsh deploy.sh
+```
+* zplugのinstallが行われシンボリックが作成されます。下記コードを実行しましょう!!
+``` console
+  zplug install
+```
+``` console
+  zplug update
+```
+* プラグインの導入終了後、zshrcとvimrcの読み込をしましょう!!
+``` console
+  source .zshrc
+```
+``` console
+  source .vimrc
+```
+## 以上で設定完了ですお疲れ様でした!!
+
